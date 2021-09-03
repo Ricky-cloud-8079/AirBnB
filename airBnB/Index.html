@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Site/css/Reset.css">
+    <link rel="stylesheet" href="./Site/css/Util.css">
+    <link rel="stylesheet" href="./Site/css/gird.css">
+    <link rel="stylesheet" href="./Site/css/MediaGrid.css">
+    <link rel="stylesheet" href="./Site/css/Style.css">
+
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="navbar">
+        <div class="container">
+
+            <div id="logo">
+
+                <div class="full-logo">
+                    <svg width="102" height="32" fill="currentcolor" style="display: block">
+                        <path
+                            d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5zM41.54 24.12a5.02 5.02 0 01-3.95-1.83 6.55 6.55 0 01-1.6-4.48 6.96 6.96 0 011.66-4.58 5.3 5.3 0 014.08-1.86 4.3 4.3 0 013.7 1.92l.1-1.57h2.92V23.8h-2.93l-.1-1.76a4.52 4.52 0 01-3.88 2.08zm.76-2.88c.58 0 1.09-.16 1.57-.45.44-.32.8-.74 1.08-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.55.45zM53.45 8.46c0 .35-.06.67-.22.93-.16.25-.38.48-.67.64-.29.16-.6.22-.92.22-.32 0-.64-.06-.93-.22a1.84 1.84 0 01-.67-.64 1.82 1.82 0 01-.22-.93c0-.36.07-.68.22-.93.16-.3.39-.48.67-.64.29-.16.6-.23.93-.23a1.84 1.84 0 011.6.86 2 2 0 01.21.94zm-3.4 15.3V11.7h3.18v12.08h-3.19zm11.68-8.9v.04c-.15-.07-.35-.1-.5-.13-.2-.04-.36-.04-.55-.04-.89 0-1.56.26-2 .8-.48.55-.7 1.32-.7 2.31v5.93h-3.19V11.69h2.93l.1 1.83c.32-.64.7-1.12 1.24-1.48a3.1 3.1 0 011.81-.5c.23 0 .45.02.64.06.1.03.16.03.22.06v3.2zm1.28 8.9V6.74h3.18v6.5c.45-.58.96-1.03 1.6-1.38a5.02 5.02 0 016.08 1.31 6.55 6.55 0 011.6 4.49 6.96 6.96 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.1 1.57-2.92.03zm6.15-2.52c.57 0 1.08-.16 1.56-.45.44-.32.8-.74 1.08-1.25.26-.51.38-1.12.38-1.8 0-.67-.12-1.28-.38-1.79a3.75 3.75 0 00-1.08-1.25 2.95 2.95 0 00-3.12 0c-.45.32-.8.74-1.09 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.56.45zm7.51 2.53V11.69h2.93l.1 1.57a3.96 3.96 0 013.54-1.89 4.1 4.1 0 013.82 2.44c.35.76.54 1.7.54 2.75v7.24h-3.19v-6.82c0-.84-.19-1.5-.57-1.99-.38-.48-.9-.74-1.56-.74-.48 0-.9.1-1.27.32-.35.23-.64.52-.86.93a2.7 2.7 0 00-.32 1.35v6.92h-3.16zm12.52 0V6.73h3.19v6.5a4.67 4.67 0 013.73-1.89 5.02 5.02 0 013.95 1.83 6.57 6.57 0 011.59 4.48 6.95 6.95 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.09 1.57-2.93.03zm6.18-2.53c.58 0 1.09-.16 1.56-.45.45-.32.8-.74 1.09-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a3.63 3.63 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.95.45 1.55.45z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div class="half-logo">
+                    <svg width="30" height="32" fill="currentcolor" style="display: block">
+                        <path
+                            d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+
+            <div class="search">
+                <dl>
+                    <dd>位置</dd>
+                    <dd>入住</dd>
+                    <dd>退房</dd>
+                </dl>
+
+
+                <div class="search-bar">
+                    <input type="text" placeholder="你想去哪裡?" />
+
+                    <input type="text" placeholder="新增日期" />
+
+                    <input type="text" placeholder="新增日期" />
+
+                    <input type="text" placeholder="新增人數" />
+
+                    <div>
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            role="presentation" focusable="false" style="
+                                display: block;
+                                fill: none;
+                                height: 16px;
+                                width: 16px;
+                                stroke: currentcolor;
+                                stroke-width: 4;
+                                overflow: visible;
+                            ">
+                            <g fill="none">
+                                <path
+                                    d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="users">
+
+                <a href="#">成為房東</a>
+
+
+                <svg class="language" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    role="presentation" focusable="false" style="
+                        display: block;
+                        height: 18px;
+                        width: 18px;
+                        fill: currentcolor;
+                    ">
+                    <path
+                        d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                    </path>
+                </svg>
+
+                <div class="menu">
+
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                        focusable="false" style="
+                            display: block;
+                            fill: none;
+                            height: 16px;
+                            width: 16px;
+                            stroke: currentcolor;
+                            stroke-width: 3;
+                            overflow: visible;
+                        ">
+                        <g fill="none" fill-rule="nonzero">
+                            <path d="m2 16h28"></path>
+                            <path d="m2 24h28"></path>
+                            <path d="m2 8h28"></path>
+                        </g>
+                    </svg>
+
+
+                    <svg class="user-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                        role="presentation" focusable="false" style="
+                            display: block;
+                            height: 30px;
+                            width: 30px;
+                            fill: currentcolor;
+                        ">
+                        <path
+                            d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- head -->
+    <header>
+        <div class="container">
+            <div class="pt-4 pl-4">
+                <span class="h1">走出戶外，回歸自然</span>
+                <p>Airbnb 精心挑選的住宿與體驗。</p>
+                <a href="#" class="btn mt-2 header-btn">汲取靈感</a>
+            </div>
+        </div>
+    </header>
+    <!--Ex  -->
+    <section class="pb-4 pt-4 explore">
+        <div class="container">
+            <section class=" mt-2 mb-2">
+                <span class="h2">探索周邊 </span>
+            </section>
+
+            <div class="row4  h3 mt-2">
+
+                <div class="col-md-4  d-flex">
+                    <div class="Ex-icon">
+                        <img src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240"
+                            alt="" class="sm-icon">
+                    </div>
+                    <div>
+                        <p class="ml-2 ">NewTaipei</p>
+                        <p class="ml-2 p2">4.5小時車程</p>
+                    </div>
+                </div>
+                <div class="col-md-4  d-flex">
+                    <div class="Ex-icon">
+                        <img src="https://a0.muscache.com/im/pictures/52e8083e-2de2-446d-a860-534eab250541.jpg?im_q=medq&im_w=240"
+                            alt="" class="sm-icon">
+                    </div>
+                    <div>
+                        <p class="ml-2 ">NewTaipei</p>
+                        <p class="ml-2 p2">4.5小時車程</p>
+                    </div>
+                </div>
+                <div class="col-md-4  d-flex">
+                    <div class="Ex-icon">
+                        <img src="https://a0.muscache.com/im/pictures/e639b7ab-aee3-48ee-9743-216684a51319.jpg?im_q=medq&im_w=240"
+                            alt="" class="sm-icon">
+                    </div>
+                    <div>
+                        <p class="ml-2 ">NewTaipei</p>
+                        <p class="ml-2 p2">4.5小時車程</p>
+                    </div>
+                </div>
+                <div class="col-md-4  d-flex">
+                    <div class="Ex-icon">
+                        <img src="https://a0.muscache.com/im/pictures/7253e011-7c22-48fd-b75d-d0da35372397.jpg?im_q=medq&im_w=240"
+                            alt="" class="sm-icon">
+                    </div>
+                    <div>
+                        <p class="ml-2 ">NewTaipei</p>
+                        <p class="ml-2 p2">4.5小時車程</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row4  h3 mt-2">
+
+                <div class="col-md-4  d-flex">
+                    <div class="Ex-icon">
+                        <img src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240"
+                            alt="" class="md-icon">
+                    </div>
+                    <div>
+                        <p class="ml-2 ">NewTaipei</p>
+                        <p class="ml-2 p2">4.5小時車程</p>
+                    </div>
+                </div>
+                <div class="col-md-4  d-flex">
+                    <div class="Ex-icon">
+                        <img src="https://a0.muscache.com/im/pictures/52e8083e-2de2-446d-a860-534eab250541.jpg?im_q=medq&im_w=240"
+                            alt="" class="md-icon">
+                    </div>
+                    <div>
+                        <p class="ml-2 ">NewTaipei</p>
+                        <p class="ml-2 p2">4.5小時車程</p>
+                    </div>
+                </div>
+                <div class="col-md-4  d-flex">
+                    <div class="Ex-icon">
+                        <img src="https://a0.muscache.com/im/pictures/e639b7ab-aee3-48ee-9743-216684a51319.jpg?im_q=medq&im_w=240"
+                            alt="" class="md-icon">
+                    </div>
+                    <div>
+                        <p class="ml-2 ">NewTaipei</p>
+                        <p class="ml-2 p2">4.5小時車程</p>
+                    </div>
+                </div>
+                <div class="col-md-4  d-flex">
+                    <div class="Ex-icon">
+                        <img src="https://a0.muscache.com/im/pictures/7253e011-7c22-48fd-b75d-d0da35372397.jpg?im_q=medq&im_w=240"
+                            alt="" class="md-icon">
+                    </div>
+                    <div>
+                        <p class="ml-2 ">NewTaipei</p>
+                        <p class="ml-2 p2">4.5小時車程</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- type -->
+    <section class="pb-1 pt-4">
+        <div class="container">
+            <section class="mt-2 mb-2">
+                <span class="h2">在任何角落都能找到舒適住宿 </span>
+            </section>
+            <a href="#">
+                <div class="row4  h3">
+                    <div class="col-md-4">
+                        <div class="Browse-icon">
+                            <img src="https://a0.muscache.com/im/pictures/2f13349d-879d-43c6-83e3-8e5679291d53.jpg?im_w=720"
+                                alt="" class="md-icon">
+                        </div>
+                        <p class="mt-2">戶外度假勝地</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="Browse-icon">
+                            <img src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=720"
+                                alt="" class="md-icon">
+                        </div>
+                        <p class="mt-2">獨特房源</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="Browse-icon">
+                            <img src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=720"
+                                alt="" class="md-icon">
+                        </div>
+                        <p class="mt-2">整套房源</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="Browse-icon">
+                            <img src="https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=1920"
+                                alt="" class="md-icon">
+                        </div>
+                        <p class="mt-2">可攜帶寵物<br>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- ad -->
+    <section class="pb-1 pt-4 ">
+        <div class="container">
+            <a href="#">
+                <div class="row pt-4 pb-1">
+                    <div class="col-md-12 AD">
+                        <div class="pt-4 pl-4">
+                            <span class="h2">成為房東</span>
+                            <p>透過分享你的空間來賺取額外收入，開拓新機會。</p>
+                            <a href="#" class="btn mt-2">了解詳情</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- browse -->
+    <section class="pb-1 pt-4  mb-4">
+        <div class="container">
+            <section class="mt-2 mb-2">
+                <span class="h2">瀏覽體驗 </span>
+                <span class="content">
+                    在地達人精心規劃的現場或線上體驗，任君挑選。
+                </span>
+            </section>
+            <!-- 小於326切三塊272 -->
+            <a href="">
+                <div class="row3">
+                    <div class="col-md-3">
+                        <!-- 3欄  -->
+                        <div class="Browse-icon">
+                            <img src="https://a0.muscache.com/im/pictures/ad109d56-2421-40cd-98e6-e114160dc85b.jpg?im_w=720"
+                                alt="" class="md-icon">
+                        </div>
+                        <p class="mt-2"><span class="h3">體驗</span>
+                            隨時隨地都能參加的在地好玩新鮮事</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="Browse-icon">
+                            <img src="https://a0.muscache.com/im/pictures/a6b08861-feb8-4a01-a76d-b33d2867b441.jpg?im_w=720"
+                                alt="" class="md-icon">
+                        </div>
+                        <p class="mt-2 "><span class="h3">線上體驗</span>
+                            由體驗達人舉辦的互動式直播體驗。
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="Browse-icon">
+                            <img src="https://a0.muscache.com/im/pictures/247a1ea3-946d-4eb8-a6ab-e8b9a66846f4.jpg?im_w=720"
+                                alt="" class="md-icon">
+                        </div>
+                        <p class="mt-2"><span class="h3">精選系列：浪跡天涯</span>
+                            參加線上體驗，安坐家中暢遊全世界。</p>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="pb-4 pt-4">
+        <div class="container pl-4 pr-4">
+            <div class="row  ">
+                <div class="col-md-4">
+                    <h4>關於</h4>
+                    <ul>
+                        <li><a href="">使用 Airbnb 的方法</a></li>
+                        <li><a href="">Airbnb 新聞中心</a></li>
+                        <li><a href="">投資人</a></li>
+                        <li><a href="">Airbnb Plus</a></li>
+                        <li><a href="">Airbnb Luxe</a></li>
+                        <li><a href="">HotelTonight</a></li>
+                        <li><a href="">商務 Airbnb</a></li>
+                        <li><a href="">由房東和體驗達人為你實現</a></li>
+                        <li><a href="">工作機會</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>房東和體驗達人</h4>
+                    <ul>
+                        <li><a href="">出租房源</a></li>
+                        <li><a href="">舉辦線上體驗</a></li>
+                        <li><a href="">舉辦體驗</a></li>
+                        <li><a href="">房東義務</a></li>
+                        <li><a href="">資源中心</a></li>
+                        <li><a href="">社區中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <h4>社區</h4>
+                    <ul>
+                        <li><a href="">多元化與歸屬感</a></li>
+                        <li><a href="">無障礙設施</a></li>
+                        <li><a href="">Airbnb 推廣夥伴</a></li>
+                        <li><a href="">防疫人員住宿</a></li>
+                        <li><a href="">邀請計畫</a></li>
+                        <li><a href="">Airbnb.org</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>用戶支援</h4>
+                    <ul>
+                        <li><a href="">我們的新冠肺炎因應措施</a></li>
+                        <li><a href="">說明中心</a></li>
+                        <li><a href="">投資人</a></li>
+                        <li><a href="">退訂選項</a></li>
+                        <li><a href="">鄰里支援</a></li>
+                        <li><a href="">信任與安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-left pt-2 pb-2 d-flex" style="justify-content: space-between;">
+                &#169; 2021 Airbnb, Inc. · 隱私 · 相關條款 · 網站地圖
+                <div>
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                        focusable="false" style="display: inline-block; height: 16px; width: 16px; fill: currentcolor;">
+                        <path
+                            d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                        </path>
+
+                    </svg>
+                    繁體中文(TW) · $ TWD
+                </div>
+                <div class="d-flex">
+                    <svg class="mr-1" viewBox="0 0 32 32" role="img" aria-hidden="false" aria-label="前往Facebook"
+                        focusable="false" style="height: 18px; width: 18px; ; fill: currentcolor;">
+                        <path
+                            d="m8 14.41v-4.17c0-.42.35-.81.77-.81h2.52v-2.08c0-4.84 2.48-7.31 7.42-7.35 1.65 0 3.22.21 4.69.64.46.14.63.42.6.88l-.56 4.06c-.04.18-.14.35-.32.53-.21.11-.42.18-.63.14-.88-.25-1.78-.35-2.8-.35-1.4 0-1.61.28-1.61 1.73v1.8h4.52c.42 0 .81.42.81.88l-.35 4.17c0 .42-.35.71-.77.71h-4.21v16c0 .42-.35.81-.77.81h-5.21c-.42 0-.8-.39-.8-.81v-16h-2.52a.78.78 0 0 1 -.78-.78"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                    <svg class="mr-1" viewBox="0 0 32 32" role="img" aria-hidden="false" aria-label="前往微博"
+                        focusable="false" style="height: 18px; width: 18px; ; fill: currentcolor;">
+                        <path
+                            d="m30.85 14.19c-.15.61-.85.98-1.46.77-.64-.22-.97-.86-.76-1.5.67-2.14.27-4.05-1.21-5.7-1.37-1.56-3.5-2.17-5.47-1.78-.64.15-1.25-.28-1.37-.89-.15-.64.27-1.29.88-1.41 2.77-.61 5.68.31 7.72 2.51 1.97 2.24 2.55 5.33 1.67 8zm-4.77-5.18c-.95-1.11-2.4-1.53-3.74-1.25-.52.12-.88.61-.79 1.2.12.58.64.92 1.22.8.7-.15 1.31.06 1.82.61.49.58.61 1.23.39 1.9-.15.58.15 1.13.67 1.29a1.02 1.02 0 0 0 1.25-.67c.46-1.44.18-2.73-.82-3.86zm-9.33 13.42c-1 2.33-3.95 3.62-6.5 2.79-2.43-.77-3.53-3.22-2.43-5.42 1.06-2.11 3.8-3.31 6.2-2.69 2.52.64 3.74 3 2.73 5.33zm-5.13-1.81c-.82-.34-1.79 0-2.28.77s-.24 1.68.52 2.05 1.85 0 2.34-.77c.49-.83.24-1.72-.58-2.05zm1.94-.8c-.76-.34-1.37.8-.64 1.07.33.15.64.06.88-.31.15-.34.09-.64-.24-.77zm-.03 6.83c-5.08.52-9.45-1.78-9.79-5.18-.34-3.34 3.49-6.47 8.57-6.99 5.1-.49 9.45 1.84 9.78 5.18.34 3.34-3.55 6.5-8.57 6.99zm10.12-11.14c-.18-.03-.3-.09-.39-.13-.15-.09-.27-.28-.12-.64.52-1.32.55-2.36.03-3.06-1.06-1.44-3.68-1.38-6.81-.06l-.24.09c-.34.12-.67.03-.52-.43.52-1.66.4-2.85-.3-3.62-.89-.86-2.28-.89-4.23-.12-3.92 1.56-10.43 7.35-10.43 12.75 0 1.63.64 3.1 1.91 4.35 2.53 2.57 6.66 3.86 10.95 3.86 3.98 0 7.75-1.23 10.09-2.94 2.31-1.72 3.77-3.86 3.77-5.82 0-2.12-1.67-3.59-3.71-4.23z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                    <svg class="mr-1" viewBox="0 0 32 32" role="img" aria-hidden="false" aria-label="前往Twitter"
+                        focusable="false" style="height: 18px; width: 18px;; fill: currentcolor;">
+                        <path
+                            d="m31 6.36c-1.16.49-2.32.82-3.55.95 1.29-.76 2.22-1.87 2.72-3.38a13.05 13.05 0 0 1 -3.91 1.51c-1.23-1.28-2.75-1.94-4.51-1.94-3.41 0-6.17 2.73-6.17 6.12 0 .49.07.95.17 1.38-4.94-.23-9.51-2.6-12.66-6.38-.56.95-.86 1.97-.86 3.09 0 2.07 1.03 3.91 2.75 5.06-1-.03-1.92-.3-2.82-.76v.07c0 2.89 2.12 5.42 4.94 5.98-.63.17-1.16.23-1.62.23-.3 0-.7-.03-1.13-.13a6.07 6.07 0 0 0 5.74 4.24c-2.22 1.74-4.78 2.63-7.66 2.63-.56 0-1.06-.03-1.43-.1 2.85 1.84 6 2.76 9.41 2.76 7.29 0 12.83-4.01 15.51-9.3 1.36-2.66 2.02-5.36 2.02-8.09v-.46c-.03-.17-.03-.3-.03-.33a12.66 12.66 0 0 0 3.09-3.16"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                    <path
+                        d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z"
+                        fill-rule="evenodd"></path>
+                    <svg class="mr-1" viewBox="0 0 24 24" role="img" aria-hidden="false" aria-label="前往Instagram"
+                        focusable="false" style="height: 18px; width: 18px; display: block; fill: currentcolor;">
+                        <path
+                            d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("navbar").style.padding = "20px 10px";
+                document.getElementById("logo").style.fontSize = "25px"; 
+                document.getElementById("navbar").style.background="black";
+                document.getElementById("navbar").style.color="white";
+
+
+            } else {
+                document.getElementById("navbar").style.padding = "290px 10px";
+                document.getElementById("navbar").style.background="none";
+                document.getElementById("navbar").style.color="black";
+                document.getElementById("logo").style.fontSize = "35px";
+               
+                
+            }
+        }
+    </script>
+
+</body>
+
+</html>

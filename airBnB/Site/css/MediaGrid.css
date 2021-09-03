@@ -1,0 +1,31 @@
+.container{
+    width: 960px;
+    margin: 0 auto;
+
+}
+@media only screen and (max-width: 576px)  {
+    /*小於576執行*/
+    .container {
+        width: 90%;
+    }
+    [class^="col-"] {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    /* 大於576 小於991執行 */
+    .container {
+        width: 750px;
+    }
+    .half-logo {
+        display: flex;
+    }
+
+    .full-logo {
+        display: none;
+    }
+    [class^="col-"] {
+        flex-basis: 100%;
+    }
+}

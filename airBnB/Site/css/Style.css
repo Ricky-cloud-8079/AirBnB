@@ -1,0 +1,199 @@
+.AD {
+    background: url(https://a0.muscache.com/im/pictures/5b4dc94a-0b4c-4c27-b50f-9c5a5b93c775.jpg?im_w=1440);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 380px;
+    border-radius: 18px;
+    color: white;
+    line-height: 1.5;
+    
+}
+/* .ad-contant{
+
+} */
+.btn{
+    border-radius: 8px;
+    background-color: white;
+    color: rgb(77, 57, 57);
+    text-decoration: none;
+    height: 30px;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 14px;
+    display:inline-block;
+}
+.header-btn{
+    background-color:black;
+    color: white;
+}
+header {
+    height: 550px;
+    background-image: url(https://a0.muscache.com/im/pictures/b65bef33-07be-4c55-b613-bb990193e8f6.jpg?im_w=1920);
+    background-size:cover;
+}
+footer {
+    font-size: 14px;
+    color: #222222;
+    line-height: 2rem;
+    background-color: rgb(240, 234, 234);
+}
+
+footer li {
+    list-style: none;
+}
+
+footer h4 {
+    font-size: 0.75rem;
+}
+  .p2 {
+            color: rgb(94, 94, 94);
+            font-size: 1rem;
+
+        }
+        .Ex-icon{
+            width: 65px;
+        }
+
+        #navbar {
+            height: 110px;
+            width: 100%;
+            background: #000;
+            color: #fff;
+            padding: 20px 10px;
+            position: fixed; 
+            top: 0;
+            transition: 0.5s;
+        }
+        /* nav {
+            height: 110px;
+            width: 100%;
+            background: rgb(0, 0, 0);
+            color: #fff;
+            padding: 80px 10px;
+        } */
+       
+        
+        #navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        
+        #logo {
+            display: flex;
+            flex-basis: 140px;
+            flex-grow: 1;
+            position: relative;
+            top: -10px;
+        }
+        
+        .half-logo {
+            display: none;
+        }
+        
+     
+        
+        .search {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        
+        .search dl {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -10px;
+        }
+        
+        .search dl dd {
+            margin: 0 1rem;
+        }
+        
+        .search-bar {
+            background: #fff;
+            border: 1px solid #000;
+            position: absolute;
+            top: 25px;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+        }
+        
+        .search-bar input {
+            padding: 0.5rem 3rem;
+            border: none;
+            margin: 1rem 0;
+        }
+        
+        .search-bar div {
+            height: 3rem;
+            width: 3rem;
+            margin: 0 0.5rem 0 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            background: #eb4d60;
+        }
+        
+        .search-bar input:first-child {
+            border-radius: 50px 0 0 50px;
+        }
+        
+        .search-bar input:last-child {
+            border-radius: 0 50px 50px 0;
+        }
+        
+        input:nth-child(1)::placeholder {
+            font-weight: bold;
+        }
+        
+        .search-bar input:nth-child(1),
+        .search-bar input:nth-child(2),
+        .search-bar input:nth-child(3) {
+            border-right: 1px solid grey;
+        }
+        
+        /* users */
+        .users {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-basis: 140px;
+            flex-grow: 1;
+            position: relative;
+            top: -10px;
+        }
+        
+        .users a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .language {
+            margin-left: 1rem;
+        }
+        
+        .menu {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 25px;
+            color: grey;
+            margin-left: 1rem;
+        }
+        
+        .menu svg {
+            height: 100%;
+        }
+        
+        .menu svg:first-child {
+            margin: 0.25rem 0.25rem 0.25rem 0.7rem;
+        }
+        
+        .menu svg:last-child {
+            margin: 0.25rem 0.255rem;
+        }
